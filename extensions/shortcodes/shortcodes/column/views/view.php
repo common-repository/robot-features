@@ -1,0 +1,8 @@
+<?php if (!defined('FW')) die('Forbidden');
+$class = fw_ext_builder_get_item_width('page-builder', $atts['width'] . '/frontend_class');
+?>
+<div class="rbt-col <?php echo esc_attr($class); ?><?php if ( $atts['hide_on_desktop'] == 'yes' ) { ?> rbt-hide-on-desktop<?php } if ( $atts['hide_on_smaller'] == 'yes' ) { ?> rbt-hide-on-smaller<?php } if ( $atts['width_on_smaller'] == 'yes' ) { ?> rbt-width-on-smaller<?php } if ( $atts['hide_on_tablet'] == 'yes' ) { ?> rbt-hide-on-tablet<?php } if ( $atts['width_on_tablet'] == 'yes' ) { ?> rbt-width-on-tablet<?php } if ( $atts['hide_on_mobile'] == 'yes' ) { ?> rbt-hide-on-mobile<?php } ?> <?php echo esc_attr($atts['customclass']); ?>" style="padding-left: <?php echo esc_attr($atts['left']); ?>px; padding-right: <?php echo esc_attr($atts['right']); ?>px;<?php if ($atts['align'] != '') { ?> text-align: <?php echo esc_attr($atts['align']); ?>;<?php } ?><?php if ($atts['background'] != '') { ?> background-color: <?php echo esc_attr($atts['background']); ?>;<?php } ?><?php if ($atts['border'] != '') { ?> border: <?php echo esc_attr($atts['border']); ?>;<?php } ?><?php if ($atts['background_image'] != '') { ?> background-image: url('<?php echo esc_attr($atts['background_image']['url']); ?>'); background-size: <?php echo esc_attr($atts['image_size']); ?>; background-repeat: <?php echo esc_attr($atts['image_repeat']); ?>;<?php } ?>">
+	<?php if ( $atts['max_width'] != '' ) { ?><div class="rbt-col-content rbt-col-content-<?php echo esc_attr($atts['content_position']); ?>" style="max-width: <?php echo esc_attr($atts['max_width']); ?>;"><?php } ?>
+	<?php echo do_shortcode($content); ?>
+    <?php if ( $atts['max_width'] != '' ) { ?></div><?php } ?>
+</div>

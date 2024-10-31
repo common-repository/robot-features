@@ -1,0 +1,35 @@
+.rbt-iconbox {
+    position: relative;
+	overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.rbt-iconbox-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	padding: 20px;
+}
+
+.rbt-iconbox .icon {
+	margin: 20px auto 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rbt-iconbox .icon i {
+    line-height: 100px !important;
+    font-size: 55px;
+}
+
+.rbt-iconbox .name {
+    margin-bottom: 10px;
+}
+
+.rbt-iconbox .desc p {
+    margin-bottom: 30px;
+    text-align: center;
+}

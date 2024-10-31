@@ -1,0 +1,40 @@
+.rbt-imagebox {
+    position: relative;
+}
+
+.rbt-imagebox .image {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid;
+}
+
+.rbt-imagebox .image img {
+    width: 100%;
+    display: block;
+}
+
+.rbt-imagebox .image img:hover {
+    transform: scale(1.2);
+}
+
+.rbt-imagebox .name {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.rbt-imagebox .desc {
+    margin-bottom: 30px;
+}
+
+.sidebar-left .rbt-imagebox {
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.sidebar-left .rbt-imagebox {
+		padding-right: 0;
+	}	
+}

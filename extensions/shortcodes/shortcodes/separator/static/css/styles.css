@@ -1,0 +1,52 @@
+.rbt-separator-normal,
+.rbt-separator-small {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+	text-align: center;
+}
+
+.rbt-separator-normal .rbt-separator-icon {
+    font-size: 55px;
+}
+
+.rbt-separator-small .rbt-separator-icon {
+    font-size: 30px;
+}
+
+.rbt-separator-icon-holder {
+	display: inline-block;
+	position: relative;  
+}
+
+.rbt-separator-icon-holder:before,
+.rbt-separator-icon-holder:after {
+	content: "";
+    position: absolute;
+    border-bottom: 2px solid;
+    top: 48px;
+    width: 100%;
+}
+
+.rbt-separator-icon-holder:before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+.rbt-separator-icon-holder:after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+.rbt-separator-small .rbt-separator-icon-holder:before,
+.rbt-separator-small .rbt-separator-icon-holder:after {
+	top: 25px;
+}
+
+.rbt-separator-small .rbt-separator-icon-holder:before {
+	margin-right: 8px;
+}
+
+.rbt-separator-small .rbt-separator-icon-holder:after {
+	margin-left: 8px;
+}
